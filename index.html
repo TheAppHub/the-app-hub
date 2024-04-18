@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html class="scroll-smooth">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>The App Hub | mobile - web- cloud</title>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="./dist/assets/img/favicons/apple-touch-icon.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./dist/assets/img/favicons/favicon-32x32.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="./dist/assets/img/favicons/favicon-16x16.png"
+		/>
+
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+			integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+
+		<link
+			href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;1,700&display=swap"
+			rel="stylesheet"
+		/>
+		<link href="./dist/assets/css/styles.css" rel="stylesheet" />
+	</head>
+
+	<body class="font-Nunito">
+		<!-- Header -->
+		<header id="header">
+			<nav class="container flex items-center py-4 mt-4 sm:mt-6 md:mt-12">
+				<div class="py-1 z-50">
+					<img
+						src="./dist/assets/img/The App Hub - Word Mark - Vert - Blue.svg"
+						alt="TheAppHub Logo"
+						class="h-6 md:h-10"
+					/>
+				</div>
+				<ul
+					id="nav"
+					class="invisible opacity-0 uppercase flex flex-col z-30 fixed top-0 left-0 right-0 bottom-0 items-center gap-6 text-white text-2xl justify-center bg-gradient-to-b from-apphub-blue2 to-apphub-blue sm:visible sm:opacity-100 sm:static sm:flex-row sm:bg-none sm:flex-1 sm:justify-end sm:text-apphub-blue sm:text-xs lg:gap-12 transition-all duration-700"
+				>
+					<li class="p-2 sm:p-0">
+						<a href="#web" class="cursor-pointer sm:hover:text-apphub-blue2"
+							>Web
+						</a>
+					</li>
+
+					<li class="p-2 sm:p-0">
+						<a href="#mobile" class="cursor-pointer sm:hover:text-apphub-blue2"
+							>Mobile
+						</a>
+					</li>
+
+					<li class="p-2 sm:p-0">
+						<a href="#cloud" class="cursor-pointer sm:hover:text-apphub-blue2"
+							>Cloud
+						</a>
+					</li>
+
+					<li class="p-2 sm:p-0">
+						<a href="#apphub" class="cursor-pointer sm:hover:text-apphub-blue2"
+							>The App Hub
+						</a>
+					</li>
+
+					<li
+						class="cursor-pointer sm:bg-apphub-red text-white sm:rounded-md p-2 sm:px-4 sm:py-2 md:px-7 md:py-3"
+					>
+						<a href="#contact">Get in touch</a>
+					</li>
+				</ul>
+				<div class="flex sm:hidden flex-1 justify-end z-50">
+					<button type="button" id="hamburger" class="">
+						<i class="text-2xl text-apphub-blue2 fas fa-bars"> </i>
+					</button>
+				</div>
+			</nav>
+		</header>
+
+		<main>
+			<!-- Hero -->
+			<section class="relative">
+				<div
+					class="container flex flex-col-reverse lg:flex-row items-center gab-12 mt-14 lg:mt-28"
+				>
+					<!-- Content -->
+					<div class="flex flex-1 flex-col items-center lg:items-start">
+						<div
+							id="console-container"
+							class="mb-6 flex flex-row text-apphub-blue text-3xl font-bold md:text-4xl text-center lg:text-left"
+						>
+							<h1 id="heading" class=""></h1>
+							<div id="console" class="console-underscore">&#95;</div>
+						</div>
+
+						<p class="text-apphub-grey text-center lg:text-left mb-6">
+							We love to create smart and performant web and mobile applications
+							for various use cases powered by modern technologies. We build
+							apps for clients across all industries, from start-ups to large
+							corporations. Our focus is on high quality to solve complex
+							real-world problems and provide tailored solutions for your
+							individual needs.
+						</p>
+						<div class="flex justify-center flex-wrap gap-6">
+							<a href="#web" class="btn btn-blue btn-service">
+								<i class="hidden sm:inline-block fa fa-desktop mr-2"></i>Web
+							</a>
+							<a href="#mobile" class="btn btn-white btn-service">
+								<i class="hidden sm:inline-block fa fa-mobile-screen mr-2"></i
+								>Mobile
+							</a>
+							<a href="#cloud" class="btn btn-white btn-service">
+								<i class="hidden sm:inline-block fa fa-cloud mr-2"></i>Cloud
+							</a>
+						</div>
+					</div>
+
+					<!-- Illustration -->
+					<div class="flex justify-center flex-1 mb-10 md:mb-16 lg:mb-0 z-10">
+						<img
+							class="w-5/6 h-5/6 sm:w-3/4 sm:h-3/4 md:w-full md:h-full hovering"
+							src="./dist/assets/img/analytics.svg"
+							alt=""
+						/>
+					</div>
+				</div>
+				<!-- Rounded Rectangle -->
+				<div
+					class="hidden md:block overflow-hidden bg-apphub-blue rounded-l-full absolute h-64 lg:h-80 w-3/4 lg:w-1/2 md:top-16 lg:top-32 right-0"
+				></div>
+			</section>
+
+			<!-- Services -->
+			<section class="bg-apphub-white py-20 mt-20 lg:mt-48">
+				<div class="w-full md:w-3/4 lg:w-1/2 mx-auto px-4">
+					<h2 class="text-3xl text-center text-apphub-blue font-bold">
+						Custom Software Development
+					</h2>
+					<p class="text-center text-apphub-grey mt-4">
+						Sometimes off-the-shelf software doesn't provide the perfect
+						functionalities for a specific or unique use case. We design and
+						build user-friendly custom software solutions to get our clients a
+						competitive advantage in the market – across all industries, from
+						start-ups to large corporations. In close collaboration, we design
+						and build smart and powerful web and mobile applications according
+						to their specific needs.
+					</p>
+				</div>
+
+				<!-- Web Development -->
+				<div id="web" class="relative mt-20 lg:mt-24">
+					<div
+						class="container flex flex-col lg:flex-row items-center justify-center gap-x-24"
+					>
+						<!-- Illustration -->
+						<div class="flex justify-center flex-1 mb-10 md:mb-16 lg:mb-0 z-10">
+							<img
+								class="w-5/6 h-5/6 sm:w-3/4 sm:h-3/4 md:w-full md:h-full"
+								src="./dist/assets/img/web-development.svg"
+								alt="web development"
+								loading="lazy"
+							/>
+						</div>
+
+						<!-- Content -->
+						<div class="flex flex-1 flex-col items-center lg:items-start">
+							<h3 class="text-apphub-blue text-3xl">Web Applications</h3>
+							<p
+								class="text-apphub-grey my-4 text-center lg:text-left sm:w-3/4 lg:w-full"
+							>
+								We build secure, high quality and performance improved web
+								applications using state of the art technologies. By creating
+								Progressive Web Apps, we can not only make them accessable by a
+								browser, but we can also make them installable on any device.
+								This cross-platform compatibility makes it look and feel like a
+								native app and allows offline mode or even push notifications.
+							</p>
+							<a href="#contact" class="btn btn-blue">Get in touch</a>
+						</div>
+					</div>
+					<!-- Rounded Rectangle -->
+					<div
+						class="hidden lg:block overflow-hidden bg-apphub-blue rounded-r-full absolute h-64 lg:h-80 w-3/4 lg:w-1/2 md:top-16 lg:top-20 left-0"
+					></div>
+				</div>
+
+				<!-- Mobile -->
+				<div id="mobile" class="relative mt-20 lg:mt-52">
+					<div
+						class="container flex flex-col lg:flex-row-reverse items-center justify-center gap-x-24"
+					>
+						<!-- Illustration -->
+						<div class="flex justify-center flex-1 mb-10 md:mb-16 lg:mb-0 z-10">
+							<img
+								class="w-5/6 h-5/6 sm:w-3/4 sm:h-3/4 md:w-full md:h-full"
+								src="./dist/assets/img/user-friendly.svg"
+								alt="mobile app development"
+								loading="lazy"
+							/>
+						</div>
+
+						<!-- Content -->
+						<div class="flex flex-1 flex-col items-center lg:items-start">
+							<h3 class="text-apphub-blue text-3xl">Mobile Applications</h3>
+							<p
+								class="text-apphub-grey my-4 text-center lg:text-left sm:w-3/4 lg:w-full"
+							>
+								We design beautiful UIs and develop high-performance
+								cross-platform mobile applications for iOS and Android devices.
+								We use the latest mobile toolkits to build high-quality,
+								cross-platform native app experiences, ensuring engaging user
+								interfaces and excellent performance.
+							</p>
+							<a href="#contact" class="btn btn-blue">Get in touch</a>
+						</div>
+					</div>
+					<!-- Rounded Rectangle -->
+					<div
+						class="hidden lg:block overflow-hidden bg-apphub-blue rounded-l-full absolute h-64 lg:h-80 w-3/4 lg:w-1/2 md:top-16 lg:top-20 right-0"
+					></div>
+				</div>
+
+				<!-- Cloud -->
+				<div id="cloud" class="relative mt-20 lg:mt-52">
+					<div
+						class="container flex flex-col lg:flex-row items-center justify-center gap-x-24"
+					>
+						<!-- Illustration -->
+						<div class="flex justify-center flex-1 mb-10 md:mb-16 lg:mb-0 z-10">
+							<img
+								class="w-5/6 h-5/6 sm:w-3/4 sm:h-3/4 md:w-full md:h-full"
+								src="./dist/assets/img/cloud.svg"
+								alt="Cloud"
+								loading="lazy"
+							/>
+						</div>
+
+						<!-- Content -->
+						<div class="flex flex-1 flex-col items-center lg:items-start">
+							<h3 class="text-apphub-blue text-3xl">Cloud</h3>
+							<p
+								class="text-apphub-grey my-4 text-center lg:text-left sm:w-3/4 lg:w-full"
+							>
+								The latest cloud technologies allow us to build performant,
+								highly available and scalable applications. Modern backend
+								applications can distribute the same data to multiple frontend
+								applications like web, mobile or even smart TVs. For some use
+								cases, serverless architecture can decrease complexity and lower
+								costs by outsourcing the responsibilities of managing servers.
+							</p>
+							<a href="#contact" class="btn btn-blue">Get in touch</a>
+						</div>
+					</div>
+					<!-- Rounded Rectangle -->
+					<div
+						class="hidden lg:block overflow-hidden bg-apphub-blue rounded-r-full absolute h-64 lg:h-80 w-3/4 lg:w-1/2 md:top-16 lg:top-20 left-0"
+					></div>
+				</div>
+			</section>
+
+			<section id="apphub" class="py-20 mt-4 md:mt-16">
+				<!-- The App Hub  -->
+				<div class="w-full md:w-3/4 lg:w-1/2 mx-auto px-4">
+					<h2 class="text-3xl text-center text-apphub-blue font-bold">
+						The App Hub
+					</h2>
+					<p class="text-center text-apphub-grey mt-4">
+						We are a development and consulting company based in Melbourne that
+						specializes in web, mobile and cloud technologies as well as related
+						concepts. We create software that solves real-world problems and
+						strive for smart and elegant solutions to build secure and
+						performant applications.
+					</p>
+				</div>
+
+				<!-- Card  -->
+				<div
+					class="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 mt-16"
+				>
+					<!-- Card Security  -->
+					<div class="flex flex-col rounded-md shadow-md lg:mb-16">
+						<div class="p-6 flex flex-col items-center">
+							<img
+								src="./dist/assets/img/security.svg"
+								alt="Web security"
+								loading="lazy"
+								class="w-2/3 md:w-full"
+							/>
+							<h4 class="mt-5 mb-2 text-apphub-blue text-lg">Web Security</h4>
+							<p class="mb-2 text-apphub-grey font-light">
+								Next to usability, robustness, and performance, we place great
+								emphasis on the security of the applications we build. They all
+								use the latest strategies and industry-standard vulnerability
+								prevention methods to protect your users' sensitive data from
+								hackers.
+							</p>
+						</div>
+					</div>
+
+					<!-- Card Hybrid  -->
+					<div class="flex flex-col rounded-md shadow-md lg:my-8">
+						<div class="p-6 flex flex-col items-center">
+							<img
+								src="./dist/assets/img/hybrid.svg"
+								alt="Web security"
+								loading="lazy"
+								class="w-2/3 md:w-full"
+							/>
+							<h4 class="mt-5 mb-2 text-apphub-blue text-lg">Cross-Platform</h4>
+							<p class="mb-2 text-apphub-grey font-light">
+								Depending on the specific project requirements, we use Ionic or
+								Flutter to build high quality mobile apps from a single codebase
+								for iOS and Android. Building apps with only one codebase
+								instead of two can significantly reduce costs and development
+								time.
+							</p>
+						</div>
+					</div>
+
+					<!-- Card Design  -->
+					<div class="flex flex-col rounded-md shadow-md lg:mt-16">
+						<div class="p-6 flex flex-col items-center">
+							<img
+								src="./dist/assets/img/user-friendly.svg"
+								alt="User friendly design"
+								loading="lazy"
+								class="w-2/3 md:w-full"
+							/>
+							<h4 class="mt-5 mb-2 text-apphub-blue text-lg">Modern Design</h4>
+							<p class="mb-2 text-apphub-grey font-light">
+								Taking away the complexity and making it simple for the user is
+								a key ingredient in successful and sustainable applications. We
+								design and build applications which look great, are easy to use
+								and your target audience will love.
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="technologies" class="pt-10 md:pt-20">
+				<!-- Technologies  -->
+				<div class="w-full md:w-3/4 lg:w-1/2 mx-auto px-4">
+					<h3 class="text-3xl text-center text-apphub-blue">
+						Modern Technologies
+					</h3>
+					<p class="text-center text-apphub-grey mt-4">
+						To ensure the best usability, robustness, performance and the
+						highest security standard, we always keep up with the latest
+						technology trends in the industry. Currently, our primary choice for
+						web applications is Angular, a JavaScript framework for building
+						enterprise mobile, desktop and web applications. We prefer (but are
+						not restricted to) NodeJS in conjunction with the NestJS framework
+						for the backend and Flutter for native mobile applications.
+						Additionally, we use many more technologies to support optimal
+						development, testing and deployment.
+					</p>
+				</div>
+
+				<!-- Dev Icons  -->
+				<div class="max-w-[175rem] mx-auto">
+					<div
+						class="devicons relative h-72 md:h-[38rem] overflow-hidden"
+					></div>
+				</div>
+			</section>
+
+			<!-- Contact  -->
+			<section id="contact" class="bg-apphub-white">
+				<div
+					class="container mt-8 px-8 grid gap-16 grid-cols-1 md:grid-cols-2 md:px-12 lg:px-16 xl:px-32 py-16 mx-auto"
+				>
+					<div class="flex flex-col justify-between">
+						<div class="text-center md:text-left text-apphub-grey mb-8">
+							Do you have a project in mind or an idea for a new application?
+						</div>
+
+						<div>
+							<h3
+								class="text-center md:text-left text-3xl lg:text-4xl font-bold leading-tight"
+							>
+								Let's get in touch and talk about it!
+							</h3>
+						</div>
+						<div class="mt-8 text-center">
+							<img
+								src="./dist/assets/img/idea.svg"
+								alt="idea"
+								loading="lazy"
+								class="w-2/3 mx-auto md:w-full md:m-0"
+							/>
+						</div>
+					</div>
+					<form id="contactForm" class="relative" method="post">
+						<div>
+							<span class="text-sm text-apphub-grey">Name</span>
+							<input
+								name="name"
+								class="w-full bg-white mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline caret-apphub-blue"
+								type="text"
+								placeholder=""
+							/>
+						</div>
+						<div class="mt-8">
+							<span class="text-sm text-apphub-grey">Email</span>
+							<input
+								name="email"
+								class="w-full bg-white mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline caret-apphub-blue"
+								type="email"
+							/>
+						</div>
+						<div class="mt-8 hidden">
+							<span class="text-sm text-apphub-grey">Mobile</span>
+							<input
+								name="mobileNo"
+								class="w-full bg-white mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline caret-apphub-blue"
+								type="text"
+							/>
+						</div>
+						<div class="mt-8">
+							<span class="text-sm text-apphub-grey">Message</span>
+							<textarea
+								name="message"
+								class="w-full h-32 bg-white mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline caret-apphub-blue"
+							></textarea>
+						</div>
+
+						<div class="mt-8">
+							<button id="submit" class="btn btn-red">Send</button>
+
+							<button
+								id="sending"
+								class="hidden btn bg-apphub-blue2 text-white cursor-not-allowed"
+								disabled
+							>
+								<svg
+									class="animate-spin -ml-1 mr-3 h-5 w-5 text-white"
+									xmlns="http://www.w3.org/2000/svg"
+									fill="none"
+									viewBox="0 0 24 24"
+								>
+									<circle
+										class="opacity-25"
+										cx="12"
+										cy="12"
+										r="10"
+										stroke="currentColor"
+										stroke-width="4"
+									></circle>
+									<path
+										class="opacity-75"
+										fill="currentColor"
+										d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+									></path>
+								</svg>
+								Sending
+							</button>
+						</div>
+						<div
+							id="formOverlay"
+							class="scale-0 absolute top-0 left-0 w-full h-full p-5 bg-apphub-blue2 text-white flex justify-center items-center opacity-90"
+						>
+							<div class="text-center m-10">
+								<h2 class="text-apphub-red text-xl font-bold">
+									Sent successfully!
+								</h2>
+								<p>Thank you for your email, we will be in touch soon!</p>
+							</div>
+						</div>
+					</form>
+				</div>
+			</section>
+		</main>
+
+		<!-- Footer  -->
+		<footer class="bg-apphub-blue2 py-8">
+			<div class="container flex flex-col md:flex-row items-center">
+				<div
+					class="flex flex-1 flex-wrap items-center justify-center md:justify-start gap-12"
+				>
+					<a href="#header" class="w-36">
+						<img
+							src="./dist/assets/img/The App Hub - Word Mark - Vert - White.svg"
+							alt="The App Hub"
+							loading="lazy"
+						/>
+					</a>
+					<ul class="flex text-white uppercase gap-6 sm:gap-12 text-xs">
+						<li class="cursor-pointer hover:text-apphub-blue">
+							<a href="#web">Web</a>
+						</li>
+						<li class="cursor-pointer hover:text-apphub-blue">
+							<a href="#mobile">Mobile</a>
+						</li>
+						<li class="cursor-pointer hover:text-apphub-blue">
+							<a href="#cloud">Cloud</a>
+						</li>
+						<li class="cursor-pointer hover:text-apphub-blue">
+							<a href="#apphub">The App Hub</a>
+						</li>
+						<li class="cursor-pointer hover:text-apphub-blue">
+							<a href="#technologies">Tech</a>
+						</li>
+					</ul>
+				</div>
+				<ul class="flex gap-10 mt-12 md:mt-0">
+					<li class="cursor-pointer">
+						<a
+							href="https://www.linkedin.com/company/the-app-hub/"
+							target="_blank"
+						>
+							<i
+								class="text-white text-2xl fab fa-linkedin-in hover:text-apphub-blue"
+							></i>
+						</a>
+					</li>
+					<li class="cursor-pointer">
+						<a href="https://github.com/TheAppHub" target="_blank">
+							<i
+								class="text-white text-2xl fab fa-github hover:text-apphub-blue"
+							></i>
+						</a>
+					</li>
+					<li class="cursor-pointer">
+						<a href="https://codepen.io/comjdev" target="_blank">
+							<i
+								class="text-white text-2xl fab fa-codepen hover:text-apphub-blue"
+							></i>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</footer>
+		<script src="https://cdn.rawgit.com/josephg/noisejs/master/perlin.js"></script>
+		<script src="./dist/assets/js/script.js"></script>
+	</body>
+</html>

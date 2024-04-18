@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.show-nav {
+	@apply visible opacity-100;
+}
+
+.btn {
+	@apply shadow-md py-3 px-6 rounded-md transition duration-300;
+}
+
+.btn-blue {
+	@apply bg-apphub-blue text-white hover:bg-apphub-blue2;
+}
+
+.btn-white {
+	@apply bg-apphub-white hover:bg-white;
+}
+
+.btn-red {
+	@apply bg-apphub-red  text-white hover:bg-apphub-blue2;
+}
+
+.devicon {
+	@apply h-24 lg:h-28 absolute block;
+}
+
+.hovering {
+	animation: hovering 8s ease-in-out infinite both;
+}
+
+@keyframes hovering {
+	0% {
+		transform: translate(0px, 0px);
+	}
+	50% {
+		transform: translate(0px, -15px);
+	}
+
+	100% {
+		transform: translate(0px, 0px);
+	}
+}
+
+.scale-in-center {
+	animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@keyframes scale-in-center {
+	0% {
+		transform: scale(0);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+
+.puff-out {
+	animation: puff-out 1s cubic-bezier(0.165, 0.84, 0.44, 1) both;
+}
+
+@keyframes puff-out {
+	0% {
+		transform: scale(1);
+		filter: blur(0px);
+		opacity: 1;
+	}
+	99% {
+		transform: scale(2);
+		filter: blur(4px);
+		opacity: 0;
+	}
+	100% {
+		transform: scale(0);
+		opacity: 0;
+	}
+}
+
+.mobile-hamburger {
+	animation: rotate 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.mobile-hamburger i {
+	color: white !important;
+}
+
+@keyframes rotate {
+	0% {
+		transform: rotate(0);
+	}
+	100% {
+		transform: rotate(270deg);
+	}
+}
